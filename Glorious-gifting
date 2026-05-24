@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glorious Gifting - Luxury Home Decor</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Georgia', serif; background-color: #fdfbf7; }
+    </style>
+</head>
+<body class="text-gray-800 selection:bg-[#0a2e26] selection:text-white">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-[#fdfbf7]/90 backdrop-blur-md border-b border-gray-100 px-6 py-4 shadow-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl md:text-3xl font-bold tracking-wide text-[#0a2e26]">Glorious Gifting</h1>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wider uppercase text-gray-600">
+                <a href="#home" class="hover:text-[#0a2e26] transition-colors">Home</a>
+                <a href="#collections" class="hover:text-[#0a2e26] transition-colors">Collections</a>
+                <a href="#products" class="hover:text-[#0a2e26] transition-colors">Products</a>
+                <a href="#contact" class="hover:text-[#0a2e26] transition-colors">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative h-[85vh] flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1600&auto=format&fit=crop')">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="relative z-10 text-center text-white px-6">
+            <h2 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Luxury Home Decor</h2>
+            <p class="text-lg md:text-2xl mb-8 max-w-2xl mx-auto text-gray-200 font-light">Premium decorative items crafted to elevate your living space and gifting experience.</p>
+            <a href="#products" class="inline-block bg-white text-[#0a2e26] px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-[#0a2e26] hover:text-white transform hover:-translate-y-0.5 transition duration-300">Shop The Collection</a>
+        </div>
+    </section>
+
+    <!-- COLLECTIONS SECTION -->
+    <section id="collections" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h3 class="text-4xl font-bold mb-4 text-[#0a2e26]">Featured Collections</h3>
+            <p class="text-gray-500 max-w-md mx-auto tracking-wide">Elegant centerpiece and handcrafted statement pieces designed for modern interiors.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="relative rounded-3xl overflow-hidden shadow-lg group h-[450px]">
+                <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop" class="h-full w-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-8">
+                    <div>
+                        <h4 class="text-white text-3xl font-bold">Table Decor</h4>
+                        <p class="text-gray-200 mt-2 font-light text-sm tracking-wider uppercase">Luxury centerpieces</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="relative rounded-3xl overflow-hidden shadow-lg group h-[450px]">
+                <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop" class="h-full w-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-8">
+                    <div>
+                        <h4 class="text-white text-3xl font-bold">Wall Art</h4>
+                        <p class="text-gray-200 mt-2 font-light text-sm tracking-wider uppercase">Modern premium frames</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="relative rounded-3xl overflow-hidden shadow-lg group h-[450px]">
+                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop" class="h-full w-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-8">
+                    <div>
+                        <h4 class="text-white text-3xl font-bold">Living Decor</h4>
+                        <p class="text-gray-200 mt-2 font-light text-sm tracking-wider uppercase">Elegant luxury statements</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BEST SELLING PRODUCTS -->
+    <section id="products" class="bg-[#f4f1eb] py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold mb-4 text-[#0a2e26]">Best Selling Products</h3>
+                <p class="text-gray-500 tracking-wide">Explore our premium decorative handicrafts collection</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?q=80&w=1200&auto=format&fit=crop" class="h-72 w-full object-cover">
+                    <div class="p-6">
+                        <h4 class="text-lg font-semibold text-gray-800">Golden Vase Set</h4>
+                        <p class="text-[#0a2e26] font-medium mt-1 text-lg">₹1,299</p>
+                        <button class="mt-5 w-full bg-[#0a2e26] text-white py-3 rounded-xl font-medium">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop" class="h-72 w-full object-cover">
+                    <div class="p-6">
+                        <h4 class="text-lg font-semibold text-gray-800">Luxury Table Decor</h4>
+                        <p class="text-[#0a2e26] font-medium mt-1 text-lg">₹2,499</p>
+                        <button class="mt-5 w-full bg-[#0a2e26] text-white py-3 rounded-xl font-medium">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <img src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?q=80&w=1200&auto=format&fit=crop" class="h-72 w-full object-cover">
+                    <div class="p-6">
+                        <h4 class="text-lg font-semibold text-gray-800">Modern Wall Piece</h4>
+                        <p class="text-[#0a2e26] font-medium mt-1 text-lg">₹1,899</p>
+                        <button class="mt-5 w-full bg-[#0a2e26] text-white py-3 rounded-xl font-medium">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <img src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?q=80&w=1200&auto=format&fit=crop" class="h-72 w-full object-cover">
+                    <div class="p-6">
+                        <h4 class="text-lg font-semibold text-gray-800">Premium Candle Holder</h4>
+                        <p class="text-[#0a2e26] font-medium mt-1 text-lg">₹999</p>
+                        <button class="mt-5 w-full bg-[#0a2e26] text-white py-3 rounded-xl font-medium">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="bg-[#051713] text-gray-400 py-16 px-6 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12">
+            <div>
+                <h4 class="text-2xl font-bold text-white mb-4">Glorious Gifting</h4>
+                <p class="font-light text-sm leading-relaxed">Premium home decor, brass handicraft masterpieces, and gifting products crafted carefully for premium modern living.</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-4 uppercase tracking-wider">Quick Links</h4>
+                <ul class="space-y-3 text-sm font-light">
+                    <li><a href="#home" class="hover:text-white">Home</a></li>
+                    <li><a href="#collections" class="hover:text-white">Collections</a></li>
+                    <li><a href="#products" class="hover:text-white">Products</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-4 uppercase tracking-wider">Contact Support</h4>
+                <ul class="space-y-3 text-sm font-light">
+                    <li>WhatsApp: <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="text-emerald-400 hover:underline">+91 XXXXX XXXXX</a></li>
+                    <li>Email: <span class="text-white">support@gloriousgifting.in</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 max-w-7xl mx-auto mt-12 pt-6 text-center text-xs text-gray-500">
+            © 2026 Glorious Gifting. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition duration-200 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.907h.004c4.368 0 7.926-3.559 7.93-7.93a7.897 7.897 0 0 0-2.327-5.645ZM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592Zm3.608-4.745c-.183-.092-1.09-.539-1.258-.6-.167-.061-.29-.092-.412.092-.121.182-.47.539-.577.66-.107.121-.213.137-.396.046-.182-.093-.769-.283-1.465-.902-.542-.483-.908-1.08-.1014-1.171-.183-.092-.396-.396-.54-.122-.14-.03-.268-.016-.363.046-.096.061-.769.752-.769 1.83 0 1.077.784 2.117.893 2.266.109.15 1.545 2.357 3.743 3.303.523.225.931.36 1.25.462.525.167 1.004.143 1.38.087.42-.063 1.09-.446 1.244-.855.154-.408.154-.757.108-.831-.046-.074-.167-.117-.349-.208Z"/>
+        </svg>
+    </a>
+</body>
+</html>
