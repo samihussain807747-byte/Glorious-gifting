@@ -4,96 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glorious Gifting - Wholesale Handicrafts Catalog</title>
+    <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         html { scroll-behavior: smooth; }
         body { font-family: 'Georgia', serif; background-color: #fdfbf7; }
     </style>
 </head>
-<body class="text-gray-800">
+<body class="text-gray-800 selection:bg-[#0a2e26] selection:text-white">
 
     <!-- HEADER -->
     <header class="sticky top-0 z-50 bg-[#fdfbf7]/90 backdrop-blur-md border-b border-gray-100 px-6 py-4 shadow-sm">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold tracking-wide text-[#0a2e26]">Glorious Gifting</h1>
-            <nav class="space-x-6 text-sm font-medium uppercase text-gray-600 font-sans">
-                <a href="#categories" class="hover:text-[#0a2e26]">Categories</a>
-                <a href="#contact" class="hover:text-[#0a2e26]">Contact</a>
+            <div>
+                <h1 class="text-2xl md:text-3xl font-bold tracking-wide text-[#0a2e26]">Glorious Gifting</h1>
+                <p class="text-[10px] text-amber-700 tracking-widest uppercase font-sans font-semibold">Exporters & Manufacturers | Moradabad</p>
+            </div>
+            <nav class="space-x-6 text-sm font-medium tracking-wider uppercase text-gray-600 font-sans">
+                <a href="#categories" class="hover:text-[#0a2e26] transition-colors">Categories</a>
+                <a href="#contact" class="hover:text-[#0a2e26] transition-colors">Contact</a>
             </nav>
         </div>
     </header>
 
-    <!-- CATEGORIES -->
-    <section id="categories" class="py-12 px-6 max-w-7xl mx-auto">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-            <a href="#baskets" class="bg-white border p-6 rounded-2xl text-center shadow-sm">🧺 <span class="block mt-2 font-semibold text-sm">Metal Baskets</span></a>
-            <a href="#german-silver" class="bg-white border p-6 rounded-2xl text-center shadow-sm">🍽️ <span class="block mt-2 font-semibold text-sm">German Silver</span></a>
-            <a href="#hampers" class="bg-white border p-6 rounded-2xl text-center shadow-sm">🎁 <span class="block mt-2 font-semibold text-sm">Hampers</span></a>
-            <a href="#pichwai" class="bg-white border p-6 rounded-2xl text-center shadow-sm">🎨 <span class="block mt-2 font-semibold text-sm">Pichwai Trays</span></a>
+    <!-- HERO SECTION -->
+    <section class="relative h-[30vh] flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=1600&auto=format&fit=crop')">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10 text-center text-white px-6">
+            <h2 class="text-3xl md:text-5xl font-bold mb-2">Wholesale Premium Catalog</h2>
+            <p class="text-sm md:text-base text-gray-200 font-light max-w-xl mx-auto">Select a category below to view our active designs and send direct WhatsApp inquiries.</p>
         </div>
     </section>
 
-    <!-- PRODUCT LIST -->
-    <div class="max-w-5xl mx-auto px-6 pb-20 space-y-16">
+    <!-- MAIN CATEGORIES SECTION -->
+    <section id="categories" class="py-12 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-10">
+            <h3 class="text-3xl font-bold text-[#0a2e26]">Browse by Category</h3>
+            <p class="text-gray-500 text-sm mt-1">Click on any category to jump directly to its collection</p>
+        </div>
+
+        <!-- Category Grid Buttons -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto font-sans">
+            <a href="#metal-baskets" class="bg-white border border-gray-200 p-6 rounded-2xl text-center shadow-sm hover:shadow-md hover:border-[#0a2e26] transition duration-200 block">
+                <span class="text-3xl block mb-2">🧺</span>
+                <span class="font-semibold text-gray-800 text-sm md:text-base">Metal Baskets</span>
+            </a>
+            <a href="#german-silver" class="bg-white border border-gray-200 p-6 rounded-2xl text-center shadow-sm hover:shadow-md hover:border-[#0a2e26] transition duration-200 block">
+                <span class="text-3xl block mb-2">🍽️</span>
+                <span class="font-semibold text-gray-800 text-sm md:text-base">German Silver</span>
+            </a>
+            <a href="#pichwai-collection" class="bg-white border border-gray-200 p-6 rounded-2xl text-center shadow-sm hover:shadow-md hover:border-[#0a2e26] transition duration-200 block">
+                <span class="text-3xl block mb-2">🎨</span>
+                <span class="font-semibold text-gray-800 text-sm md:text-base">Pichwai Collection</span>
+            </a>
+            <a href="#festive-gifts" class="bg-white border border-gray-200 p-6 rounded-2xl text-center shadow-sm hover:shadow-md hover:border-[#0a2e26] transition duration-200 block">
+                <span class="text-3xl block mb-2">🎁</span>
+                <span class="font-semibold text-gray-800 text-sm md:text-base">Festive & Hampers</span>
+            </a>
+        </div>
+    </section>
+
+    <hr class="border-gray-200 max-w-7xl mx-auto">
+
+    <!-- 1. METAL BASKETS SECTION -->
+    <section id="metal-baskets" class="py-16 px-6 max-w-7xl mx-auto scroll-mt-20">
+        <div class="mb-10 border-l-4 border-amber-600 pl-4">
+            <h4 class="text-2xl font-bold text-[#0a2e26]">Metal Baskets Collection</h4>
+            <p class="text-gray-500 text-sm">Premium iron mesh and textured wire designer hampers</p>
+        </div>
         
-        <!-- Basket -->
-        <section id="baskets">
-            <div class="bg-white rounded-3xl overflow-hidden shadow-lg border">
-                <img src="https://i.ibb.co/BVYx1fzT/1000000201.jpg" class="w-full h-80 object-cover">
-                <div class="p-6 text-center">
-                    <h5 class="text-xl font-bold">Metal Basket</h5>
-                    <a href="https://wa.me/917983167906?text=I%20am%20interested%20in%20your%20Metal%20Basket.%20Please%20share%20details." target="_blank" class="block mt-4 bg-[#25D366] text-white py-3 rounded-xl font-bold">💬 Inquire on WhatsApp</a>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl">
+            <!-- Basket 1 (Image 1000000201.jpg) -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between">
+                <img src="https://i.ibb.co/6wXp1wY/1000000201.jpg" class="h-80 w-full object-cover" alt="Round Gold Wire Mesh Basket">
+                <div class="p-6">
+                    <h5 class="text-lg font-semibold text-gray-800">Round Gold Wire Mesh Basket</h5>
+                    <p class="text-gray-500 text-xs mt-1">Exquisite woven mesh structure with sleek matching handle. Ideal for wedding dry-fruit packs and diwali hampers.</p>
+                    <a href="https://wa.me/917983167906?text=Hello%20Glorious%20Gifting,%20I%20am%20interested%20in%20your%20'Round%20Gold%20Wire%20Mesh%20Basket'.%20Please%20share%20wholesale%20prices%2520and%20MOQ." target="_blank" class="block text-center mt-4 w-full bg-[#25D366] text-white py-3 rounded-xl text-sm font-medium hover:bg-[#20ba56] transition font-sans shadow-sm">
+                        💬 Inquire on WhatsApp
+                    </a>
                 </div>
             </div>
-        </section>
-
-        <!-- German Silver -->
-        <section id="german-silver">
-            <div class="bg-white rounded-3xl overflow-hidden shadow-lg border">
-                <img src="https://i.ibb.co/bg4DtB7Q/1000000202.jpg" class="w-full h-80 object-cover">
-                <div class="p-6 text-center">
-                    <h5 class="text-xl font-bold">German Silver Tray Set</h5>
-                    <a href="https://wa.me/917983167906?text=I%20am%20interested%20in%20your%20German%20Silver%20Tray%20Set.%20Please%20share%20details." target="_blank" class="block mt-4 bg-[#25D366] text-white py-3 rounded-xl font-bold">💬 Inquire on WhatsApp</a>
+            <!-- Basket 2 (Image 1000000203.jpg) -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between">
+                <img src="https://i.ibb.co/VxhjVms/1000000203.jpg" class="h-80 w-full object-cover" alt="Premium Gold Textured Jar Hamper Basket">
+                <div class="p-6">
+                    <h5 class="text-lg font-semibold text-gray-800">Premium Textured Gold Hamper Box</h5>
+                    <p class="text-gray-500 text-xs mt-1">Heavy metal box with a textured honeycomb gold design and top bar handle. Perfect layout for high-end jar hampers.</p>
+                    <a href="https://wa.me/917983167906?text=Hello%20Glorious%20Gifting,%20I%20am%20interested%20in%20your%20'Premium%20Textured%20Gold%20Hamper%20Box'.%20Please%20share%20wholesale%20prices%20and%20MOQ." target="_blank" class="block text-center mt-4 w-full bg-[#25D366] text-white py-3 rounded-xl text-sm font-medium hover:bg-[#20ba56] transition font-sans shadow-sm">
+                        💬 Inquire on WhatsApp
+                    </a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Hamper -->
-        <section id="hampers">
-            <div class="bg-white rounded-3xl overflow-hidden shadow-lg border">
-                <img src="https://i.ibb.co/hR5fwFdz/1000000203.jpg" class="w-full h-80 object-cover">
-                <div class="p-6 text-center">
-                    <h5 class="text-xl font-bold">Jar Hamper Basket</h5>
-                    <a href="https://wa.me/917983167906?text=I%20am%20interested%20in%20your%20Jar%20Hamper%20Basket.%20Please%20share%20details." target="_blank" class="block mt-4 bg-[#25D366] text-white py-3 rounded-xl font-bold">💬 Inquire on WhatsApp</a>
+    <!-- 2. GERMAN SILVER SECTION -->
+    <section id="german-silver" class="py-16 bg-[#f4f1eb] px-6 scroll-mt-20">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-10 border-l-4 border-amber-600 pl-4">
+                <h4 class="text-2xl font-bold text-[#0a2e26]">German Silver Collection</h4>
+                <p class="text-gray-500 text-sm">Royal traditional silverware sets for elite return gifts</p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- German Silver Set (Image 1000000202.jpg) -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm flex flex-col justify-between">
+                    <img src="https://i.ibb.co/Mhff8G5/1000000202.jpg" class="h-72 w-full object-cover" alt="German Silver Bowl and Tray Set">
+                    <div class="p-6">
+                        <h5 class="text-lg font-semibold text-gray-800">German Silver Double Bowl Set</h5>
+                        <p class="text-gray-500 text-xs mt-1">Intricately carved matching silver bowls, designer spoons, and a matching presentation tray. Elite option for wedding return favors.</p>
+                        <a href="https://wa.me/917983167906?text=Hello%20Glorious%20Gifting,%20I%20am%20interested%20in%20your%20'German%20Silver%20Double%20Bowl%20Set'.%20Please%20share%20wholesale%20prices%20and%20MOQ." target="_blank" class="block text-center mt-4 w-full bg-[#25D366] text-white py-3 rounded-xl text-sm font-medium hover:bg-[#20ba56] transition font-sans shadow-sm">
+                            💬 Inquire on WhatsApp
+                        </a>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Pichwai Jar Tray -->
-        <section id="pichwai">
-            <div class="bg-white rounded-3xl overflow-hidden shadow-lg border">
-                <img src="https://i.ibb.co/3nbr1DL/1000000204.jpg" class="w-full h-80 object-cover">
-                <div class="p-6 text-center">
-                    <h5 class="text-xl font-bold">Pichwai Jar Tray Set</h5>
-                    <a href="https://wa.me/917983167906?text=I%20am%20interested%20in%20your%20Pichwai%20Jar%20Tray%20Set.%20Please%20share%20details." target="_blank" class="block mt-4 bg-[#25D366] text-white py-3 rounded-xl font-bold">💬 Inquire on WhatsApp</a>
+    <!-- 3. PICHWAI TRAYS & JARS SECTION -->
+    <section id="pichwai-collection" class="py-16 px-6 max-w-7xl mx-auto scroll-mt-20">
+        <div class="mb-10 border-l-4 border-amber-600 pl-4">
+            <h4 class="text-2xl font-bold text-[#0a2e26]">Pichwai Collection</h4>
+            <p class="text-gray-500 text-sm">Ethnic Indian artwork featuring traditional cow, lotus, and floral aesthetics</p>
+        </div>
+        
+        <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl">
+            <!-- Pichwai Jars (Image 1000000204.jpg) -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between">
+                <img src="https://i.ibb.co/R9m978K/1000000204.jpg" class="h-80 w-full object-cover" alt="Pichwai Art Jar Hamper Basket">
+                <div class="p-6">
+                    <h5 class="text-lg font-semibold text-gray-800">Traditional Pichwai Jar Tray Set</h5>
+                    <p class="text-gray-500 text-xs mt-1">Yellow and orange enamel finish print jars with crystal lid knobs, resting in a golden cut-out metal holder tray.</p>
+                    <a href="https://wa.me/917983167906?text=Hello%20Glorious%20Gifting,%20I%20am%20interested%20in%20your%20'Traditional%20Pichwai%20Jar%20Tray%20Set'.%20Please%20share%20wholesale%20prices%20and%20MOQ." target="_blank" class="block text-center mt-4 w-full bg-[#25D366] text-white py-3 rounded-xl text-sm font-medium hover:bg-[#20ba56] transition font-sans shadow-sm">
+                        💬 Inquire on WhatsApp
+                    </a>
                 </div>
             </div>
-        </section>
-
-        <!-- Pichwai Lotus Tray -->
-        <section>
-            <div class="bg-white rounded-3xl overflow-hidden shadow-lg border">
-                <img src="https://i.ibb.co/jPj41x7g/1000000205.jpg" class="w-full h-80 object-cover">
-                <div class="p-6 text-center">
-                    <h5 class="text-xl font-bold">Pichwai Lotus Tray</h5>
-                    <a href="https://wa.me/917983167906?text=I%20am%20interested%20in%20your%20Pichwai%20Lotus%20Tray.%20Please%20share%20details." target="_blank" class="block mt-4 bg-[#25D366] text-white py-3 rounded-xl font-bold">💬 Inquire on WhatsApp</a>
+            <!-- Pichwai Tray Single (Image 1000000205.jpg) -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between">
+                <img src="https://i.ibb.co/yYr11wN/1000000205.jpg" class="h-80 w-full object-cover" alt="Premium Pichwai Art Lotus Tray">
+                <div class="p-6">
+                    <h5 class="text-lg font-semibold text-gray-800">Premium Pichwai Art Lotus Tray</h5>
+                    <p class="text-gray-500 text-xs mt-1">Round golden cut-out lattice frame tray featuring a beautiful white and pink traditional lotus art base. Highly demanded festive gift.</p>
+                    <a href="https://wa.me/917983167906?text=Hello%20Glorious%20Gifting,%20I%20am%20interested%20in%20your%20'Premium%20Pichwai%20Art%20Lotus%20Tray'.%20Please%20share%20wholesale%20prices%20and%20MOQ." target="_blank" class="block text-center mt-4 w-full bg-[#25D366] text-white py-3 rounded-xl text-sm font-medium hover:bg-[#20ba56] transition font-sans shadow-sm">
+                        💬 Inquire on WhatsApp
+                    </a>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
-    <footer id="contact" class="bg-[#051713] text-white py-10 text-center text-sm">
-        <p>© 2026 Glorious Gifting | Moradabad</p>
+    <!-- FOOTER -->
+    <footer id="contact" class="bg-[#0a2e26] text-gray-400 py-12 px-6 text-center text-xs font-sans">
+        <p class="text-white text-sm mb-2"><strong>Glorious Gifting</strong></p>
+        <p class="mb-4">Moradabad Handicrafts Hub, Uttar Pradesh, India</p>
+        <p>© 2026 Glorious Gifting. All rights reserved.</p>
     </footer>
 
 </body>
